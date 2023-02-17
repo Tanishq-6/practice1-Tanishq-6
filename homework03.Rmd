@@ -1,0 +1,31 @@
+---
+title: "Homework 3"
+author: "Tanishq Jain"
+date: "2/10/2022"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r}
+#1
+#b. Team: Tanishq Jain, Taran Panduranga 
+
+#   Repository Links: Tanishq Jain: https://github.com/Tanishq-6/practice1-Tanishq-6, Taran Panduranga:    https://github.com/taranpanduranga/practice1-taranpanduranga
+
+#   Successful pull requests: Two successful pull requests made to https://github.com/taranpanduranga/practice1-taranpanduranga 
+
+#   Number of pull requests accepted: Two pull requests accepted from https://github.com/taranpanduranga/practice1-taranpanduranga
+
+#c. Tips: Commit early and often, Use descriptive commit messages, use pull requests for code reviews.
+
+#2.
+library(dplyr)
+library(ggplot2)
+gapminder <- read.csv("/Users/tanishqjain/Library/CloudStorage/Box-Box/Spring 23/DS 202/HW/HW3/gapminder-5060.csv")
+df2 <- gapminder %>% filter(country %in% c("United States"))
+ggplot(data = df2, aes(x = lifeExp, y = gdpPercap)) + geom_point()
+df3 <- gapminder %>% filter(country %in% c("Australia"))
+ggplot(data = df3, aes(x = lifeExp, y = gdpPercap)) + geom_point()
+```
+
