@@ -27,5 +27,9 @@ df2 <- gapminder %>% filter(country %in% c("United States"))
 ggplot(data = df2, aes(x = lifeExp, y = gdpPercap)) + geom_point()
 df3 <- gapminder %>% filter(country %in% c("Australia"))
 ggplot(data = df3, aes(x = lifeExp, y = gdpPercap)) + geom_point()
+
+
+df <- gapminder %>% filter(country %in% c("Canada"))
+ggplot(data = df, aes(x = lifeExp, y = gdpPercap)) + geom_point() 
 ```
 
